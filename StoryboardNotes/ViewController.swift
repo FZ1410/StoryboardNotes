@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func loginBtnClicked(_ sender: Any) {
         if userTxtfield.text == "" {
-            let alert = UIAlertController(title: "Error", message:"please enter you techcampus account", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Error", message:" enter you techcampus account", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         } else  if !userTxtfield.text!.contains("@") {
